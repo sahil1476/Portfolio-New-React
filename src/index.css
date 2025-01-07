@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --github-dark: #0d1117;
+  --github-darker: #010409;
+  --github-accent: #58a6ff;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(50vw, -20vh) rotate(10deg);
+  }
+  50% {
+    transform: translate(80vw, 40vh) rotate(-5deg);
+  }
+  75% {
+    transform: translate(20vw, 20vh) rotate(5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--github-accent),
+                 0 0 20px var(--github-accent),
+                 0 0 30px var(--github-accent);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--github-accent),
+                 0 0 30px var(--github-accent),
+                 0 0 40px var(--github-accent);
+  }
+}
+
+@keyframes buttonGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--github-accent),
+                0 0 10px var(--github-accent);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--github-accent),
+                0 0 20px var(--github-accent);
+  }
+}
+
+@keyframes lightning {
+  0%, 100% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  94%, 96% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+}
+
+.space-background {
+  background: linear-gradient(to bottom, var(--github-darker), var(--github-dark));
+}
+
+.animate-float {
+  animation: float 30s ease-in-out infinite;
+}
+
+.glow-text {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.glow-button {
+  animation: buttonGlow 2s ease-in-out infinite;
+}
+
+.lightning {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  animation: lightning 10s infinite;
+  pointer-events: none;
+}
