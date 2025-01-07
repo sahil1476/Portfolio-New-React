@@ -1,4 +1,5 @@
 import './Hero.css'
+import astoImg from '/src/assets/asto.png';
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -44,7 +45,7 @@ export function Hero() {
         
         {/* Floating Astronaut */}
         <img
-          src="/src/assets/asto.png"
+          src={astoImg}
           alt="Astronaut"
           className="absolute astronaut-animation"
         />
