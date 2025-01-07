@@ -64,7 +64,7 @@ export function Footer() {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center group">
-            Made with <Heart size={16} className="mx-1 text-red-500 group-hover:animate-pulse" /> by Sahil Sharma
+            Made with <Heart size={26} className="mx-1 text-red-500 group-hover:animate-pulse" /> by Sahil Sharma
           </p>
           <p className="text-gray-500 text-sm mt-2">&copy; 2024 All rights reserved.</p>
         </div>
