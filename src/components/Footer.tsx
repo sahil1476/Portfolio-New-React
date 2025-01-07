@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from "react-icons/fa";
 import { Heart } from 'lucide-react';
 
 export function Footer() {
@@ -50,6 +50,14 @@ export function Footer() {
             <FaEnvelope className="mr-2" /> Email
           </a>
         </li>
+         <li>
+          <a
+          href="https://medium.com/@krsahilsharma07"
+          className="flex items-center text-gray-400 hover:text-[#58a6ff] transition-colors"
+         >
+        <FaMedium className="mr-2" /> Medium
+      </a>
+    </li>
       </ul>
     </div>
 
