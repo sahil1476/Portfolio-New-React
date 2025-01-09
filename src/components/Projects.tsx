@@ -2,6 +2,14 @@ import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
+   {
+    title: ' Gaming Demo App',
+    description: 'A gaming-themed web project built using React and GSAP (GreenSock Animation Platform)',
+    image: 'https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-1dade6e50659c8e05805cb150b349e56',
+    technologies: ['React', 'GSAP - GreenSock Animation Platform'],
+    github: 'https://github.com/sahil1476/GSAP-animation-React',
+    demo: 'https://animated-gsap-react.netlify.app/'
+  },
   {
     title: ' Help Center App',
     description: 'A full-stack web application similar to Stack Overflow, designed to help users find answers to queries, share solutions, and contribute knowledge.',
@@ -52,7 +60,7 @@ const projects = [
   },
   {
     title: 'Library Management System',
-    description: ' a responsive web application using React.js , TailwndCSS and GoLang ensuring seamless data flow between frontend and backend. Request Book, Add and Update Book, Apprive or Reject Book Request',
+    description: ' A responsive web application using React.js , TailwndCSS and GoLang ensuring seamless data flow between frontend and backend. Request Book, Add and Update Book, Apprive or Reject Book Request',
     image: 'https://plus.unsplash.com/premium_vector-1720982089657-a16530b31696?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGlicmFyeSUyMG1hbmFnbWVudCUyMHN5c3xlbnwwfHwwfHx8MA%3D%3D',
     technologies: ['React.js', 'Go', 'Gin', 'Gorm'],
     github: 'https://github.com/sahil1476/LIbrary_management',
