@@ -1,15 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
-   {
-    title: ' Gaming Demo App',
-    description: 'A gaming-themed web project built using React and GSAP (GreenSock Animation Platform)',
-    image: 'https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-1dade6e50659c8e05805cb150b349e56',
-    technologies: ['React', 'GSAP - GreenSock Animation Platform'],
-    github: 'https://github.com/sahil1476/GSAP-animation-React',
-    demo: 'https://animated-gsap-react.netlify.app/'
-  },
   {
     title: ' Help Center App',
     description: 'A full-stack web application similar to Stack Overflow, designed to help users find answers to queries, share solutions, and contribute knowledge.',
@@ -60,7 +56,7 @@ const projects = [
   },
   {
     title: 'Library Management System',
-    description: ' A responsive web application using React.js , TailwndCSS and GoLang ensuring seamless data flow between frontend and backend. Request Book, Add and Update Book, Apprive or Reject Book Request',
+    description: ' a responsive web application using React.js , TailwndCSS and GoLang ensuring seamless data flow between frontend and backend. Request Book, Add and Update Book, Apprive or Reject Book Request',
     image: 'https://plus.unsplash.com/premium_vector-1720982089657-a16530b31696?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGlicmFyeSUyMG1hbmFnbWVudCUyMHN5c3xlbnwwfHwwfHx8MA%3D%3D',
     technologies: ['React.js', 'Go', 'Gin', 'Gorm'],
     github: 'https://github.com/sahil1476/LIbrary_management',
@@ -68,14 +64,46 @@ const projects = [
   },
 ];
 
+
+
 export function Projects() {
+  const projectsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    projectsRef.current.forEach((el, index) => {
+      gsap.fromTo(
+        el,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          delay: index * 0.2,
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+            end: 'bottom 60%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section id="projects" className="py-20 bg-[#0d1117]">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-12 text-white glow-text">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-[#161b22] rounded-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[#58a6ff]/20">
+            <div
+              key={index}
+              ref={(el) => (projectsRef.current[index] = el)}
+              className="bg-[#161b22] rounded-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[#58a6ff]/20"
+            >
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
