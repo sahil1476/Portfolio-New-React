@@ -64,7 +64,7 @@ export function Hero() {
         <div className="flex justify-center space-x-6">
           <a 
             href="#projects" 
-            className="bg-[#58a6ff] hover:bg-[#58a6ff]/80 text-white px-6 py-3 rounded-lg transition-colors glow-button"
+            className="bg-[#2d6fbbaf] hover:bg-[#58a6ff]/80 text-white px-6 py-3 rounded-lg transition-colors glow-button"
           >
             View Projects
           </a>
