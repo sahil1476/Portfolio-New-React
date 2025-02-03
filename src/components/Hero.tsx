@@ -65,19 +65,19 @@ export function Hero() {
 {/*         social icons */}
         <div className="flex justify-center md:justify-start space-x-6 mt-6 mb-10">
                 <a href="https://www.instagram.com/ssahilsharma_/" className="transform hover:scale-125 transition-transform duration-300 text-pink-500 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-500">
-                  <Instagram className="w-7 h-7" />
+                  <Instagram className="w-9 h-9" />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100012746700006" className="transform hover:scale-125 transition-transform duration-300 text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-600">
-                  <Facebook className="w-7 h-7" />
+                  <Facebook className="w-9 h-9" />
                 </a>
                 <a href="https://www.linkedin.com/in/sahil-sharma-34989519a/" className="transform hover:scale-125 transition-transform duration-300 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-500">
-                  <Linkedin className="w-7 h-7" />
+                  <Linkedin className="w-9 h-9" />
                 </a>
                 <a 
                   href="mailto:krsahilsharma07@gmail.com" 
                   className="transform hover:scale-125 transition-transform duration-300 text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-200"
                 >
-                  <Mail className="w-7 h-7" />
+                  <Mail className="w-9 h-9" />
                 </a>
 
               </div>
