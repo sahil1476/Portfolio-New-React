@@ -63,7 +63,7 @@ export function Hero() {
           Aspiring Web Developer | Bachelor of Technology CSE
         </p>
 {/*         social icons */}
-        <div className="flex justify-center md:justify-start space-x-6 mt-6 mb-10">
+{/*         <div className="flex justify-center md:justify-start space-x-6 mt-6 mb-10">
                 <a href="https://www.instagram.com/ssahilsharma_/" className="transform hover:scale-125 transition-transform duration-300 text-pink-500 hover:text-pink-600 dark:text-pink-400 dark:hover:text-pink-500">
                   <Instagram className="w-9 h-9" />
                 </a>
@@ -80,7 +80,7 @@ export function Hero() {
                   <Mail className="w-9 h-9" />
                 </a>
 
-              </div>
+              </div> */}
       </div>  
         <div className="flex justify-center space-x-6">
           <a 
