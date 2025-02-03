@@ -1,5 +1,7 @@
 import './Hero.css'
 import astoImg from '/src/assets/asto.png';
+import { Instagram, Facebook, Mail, Linkedin } from 'lucide-react';
+
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
