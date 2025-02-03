@@ -54,4 +54,17 @@
       transform: translateY(0); /* End at the original position */
     }
   }
-   
+   .image-text {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62fbfbed423b4f1bb8caed31/740ce1bf-3586-4c1a-99fb-2e90705a20d2/7.jpg");
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: contain;
+    background-position: center;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+
+
