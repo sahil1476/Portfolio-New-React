@@ -7,6 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
+    title: ' Password Manager',
+    description: 'A secure, animated, and responsive password manager built with React, Local Storage, and Framer Motion for smooth animations. Manage and store your passwords locally without compromising security!',
+    image: 'https://www.propertyware.com/wp-content/uploads/2014/01/password-security.jpg',
+    technologies: ['React', 'LocalStorage','Framer Motion','Tailwind CSS '],
+    github: 'https://github.com/sahil1476/Password-Generator',
+    demo: 'https://password-generator-wheat-phi.vercel.app/'
+  },
+  {
     title: ' Animated Gaming Web',
     description: 'A gaming-themed web project built using React and GSAP (GreenSock Animation Platform).',
     image: 'https://imageio.forbes.com/specials-images/imageserve/6531307511096cbdafbfb009/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds',
