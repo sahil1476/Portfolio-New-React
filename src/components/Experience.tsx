@@ -29,7 +29,7 @@ const experiences = [
     title: 'Software Developer Intern',
     logo: 'https://media.designrush.com/agencies/63605/conversions/XenonStack-logo-profile.jpg',
     company: 'XenonStack',
-    period: 'Jun 2024 - June 2024',
+    period: 'Jan 2024 - June 2024',
     description: [
       'Developed a responsive web application using React.js , TailwndCSS and GoLang ensuring seamless data flow between frontend and backend.',
       'Implemented data processing workflows using Apache Spark, enabling efficient handling of large-scale data.',
