@@ -15,6 +15,17 @@ const experiences = [
     ]
   },
   {
+    title: ' Data Analyst',
+    logo: 'https://media.licdn.com/dms/image/v2/D560BAQEnDna9cp5_jw/company-logo_100_100/company-logo_100_100/0/1722507705272/softadroit_logo?e=2147483647&v=beta&t=FfoxX26eg0K-rNKdF7x434jiTe0fQ0IFFGx_hoZ84fE',
+    company: 'SoftAdroit System Solutions',
+    period: 'July 2024 - Dec 2024',
+    description: [
+      ' Collect, clean, and analyze large Datasets, Design and implement dashboards, reports, and visualizations using tools like Tableau, Power BI, or Python libraries.',
+      'Actively participated in 10+ scrum sprints, contributing to task discussions, sprint planning, and progress updates in an agile environment.',
+      'Managed client relationships and project timelines'
+    ]
+  },
+  {
     title: 'Software Developer Intern',
     logo: 'https://media.designrush.com/agencies/63605/conversions/XenonStack-logo-profile.jpg',
     company: 'XenonStack',
@@ -25,17 +36,6 @@ const experiences = [
       'Implemented REST APIs and integrated third-party services',
       'Participated in code reviews, improving code quality and development efficiency. ',
       
-    ]
-  },
-  {
-    title: ' Data Analyst',
-    logo: 'https://media.licdn.com/dms/image/v2/D560BAQEnDna9cp5_jw/company-logo_100_100/company-logo_100_100/0/1722507705272/softadroit_logo?e=2147483647&v=beta&t=FfoxX26eg0K-rNKdF7x434jiTe0fQ0IFFGx_hoZ84fE',
-    company: 'SoftAdroit System Solutions',
-    period: 'July 2024 - Present',
-    description: [
-      ' Collect, clean, and analyze large Datasets, Design and implement dashboards, reports, and visualizations using tools like Tableau, Power BI, or Python libraries.',
-      'Actively participated in 10+ scrum sprints, contributing to task discussions, sprint planning, and progress updates in an agile environment.',
-      'Managed client relationships and project timelines'
     ]
   }
 ];
