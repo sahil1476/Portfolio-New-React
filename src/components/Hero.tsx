@@ -31,8 +31,6 @@ export function Hero() {
             }}
           />
         ))}
-          />
-        ))}
         
         {/* Stars */}
         {[...Array(100)].map((_, i) => (
