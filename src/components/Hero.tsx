@@ -76,12 +76,22 @@ export function Hero() {
           <a 
             href="#projects" 
             className="bg-[#2d6fbbaf] hover:bg-[#58a6ff]/80 text-white px-6 py-3 rounded-lg transition-colors glow-button"
+            style={{
+            backgroundImage: 'url(https://media2.giphy.com/media/kimWBtJDjWcwFH2nRB/giphy.gif?cid=6c09b9523y4evljwsd0kw0bwd0qllkeyeba4orgik84wf5lh&ep=v1_stickers_search&rid=giphy.gif&ct=s)', 
+            backgroundSize: 'cover', // Makes sure the GIF covers the button
+            backgroundPosition: 'center', // Centers the GIF in the button
+               }}
           >
-            View Projects
+              View Projects
           </a>
           <a 
             href="#contact" 
-            className="bg-transparent border-2 border-[#58a6ff] hover:bg-[#58a6ff]/10 text-[#58a6ff] px-6 py-3 rounded-lg transition-colors glow-button"
+            className="bg-transparent border-2 border-[#58a6ff] hover:bg-[#58a6ff]/10 text-[#1b1008] px-6 py-3 rounded-lg transition-colors glow-button"
+            style={{
+            backgroundImage: 'url(https://media2.giphy.com/media/xThuWx4ooOJhE3Gx3y/giphy.gif?cid=6c09b952iw99t7vdf164knez6v72xremh1fco8i3umc4gza3&ep=v1_gifs_search&rid=giphy.gif&ct=g)', 
+            backgroundSize: 'cover', // Makes sure the GIF covers the button
+            backgroundPosition: 'center', // Centers the GIF in the button
+            }}
           >
             Contact Me
           </a>
