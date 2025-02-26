@@ -11,6 +11,7 @@ export function AboutMe() {
     { 
       icon: <Code2 size={24} />, 
       name: 'Frontend', 
+      backgroundGif: 'https://www.gifcen.com/wp-content/uploads/2024/11/venom-gif-2.gif',
       items: [
         { name: 'React', icon: <Blocks className="text-[#61DAFB]" size={20} /> },
         { name: 'TypeScript', icon: <FileJson className="text-[#3178C6]" size={20} /> },
@@ -21,6 +22,7 @@ export function AboutMe() {
     { 
       icon: <Server size={24} />, 
       name: 'Backend', 
+      backgroundGif: 'https://usagif.com/wp-content/uploads/gifs/gif-marvel-44.gif',
       items: [
         { name: 'Node.js', icon: <Terminal className="text-[#339933]" size={20} /> },
         { name: 'Express', icon: <Box className="text-[#000000]" size={20} /> },
@@ -31,6 +33,7 @@ export function AboutMe() {
     { 
       icon: <Database size={24} />, 
       name: 'Database', 
+      backgroundGif: 'https://cdna.artstation.com/p/assets/images/images/020/449/458/original/felipe-chaves-drstrange-turntable-2.gif?1567798728',
       items: [
         { name: 'MongoDB', icon: <Database className="text-[#47A248]" size={20} /> },
         { name: 'PostgreSQL', icon: <Database className="text-[#336791]" size={20} /> },
@@ -41,6 +44,7 @@ export function AboutMe() {
     { 
       icon: <Globe size={24} />, 
       name: 'Other Tools', 
+      backgroundGif: 'https://media0.giphy.com/media/DzQW7lWHq8xq4zmcU3/giphy.gif?cid=6c09b95232gyzc4r7vs407wh6d3kq76yzoidkfi0i22eniry&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s',
       items: [
         { name: 'Git', icon: <GitBranch className="text-[#F05032]" size={20} /> },
         { name: 'Docker', icon: <Container className="text-[#2496ED]" size={20} /> },
@@ -70,7 +74,7 @@ export function AboutMe() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {skills.map((category, index) => (
               <div 
                 key={index} 
@@ -90,7 +94,37 @@ export function AboutMe() {
                 </div>
               </div>
             ))}
+          </div> */}
+
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+{skills.map((category, index) => (
+        <div 
+          key={index} 
+          className="bg-[#161b22] p-6 rounded-lg transform hover:-translate-y-2 transition-transform duration-300 hover:shadow-lg hover:shadow-[#58a6ff]/20"
+          style={{
+            backgroundImage: `url(${category.backgroundGif})`, // Dynamically set the GIF for each card
+            backgroundSize: 'cover', // Ensures the GIF covers the entire card
+            backgroundPosition: 'center', // Centers the GIF within the card
+            backgroundRepeat: 'no-repeat', // Prevents the GIF from repeating
+            opacity: 0.91 // Adjust opacity to not overpower the text
+          }}
+        >
+          <div className="text-[#58a6ff] mb-4 flex items-center gap-2">
+            {category.icon}
+            <h3 className="text-xl font-semibold">{category.name}</h3>
           </div>
+          <div className="grid grid-cols-2 gap-4">
+            {category.items.map((skill, i) => (
+              <div key={i} className="flex items-center gap-2 text-gray-300 hover:text-[#58a6ff] transition-colors">
+                {skill.icon}
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+</div>
+
         </div>
       </div>
     </section>
