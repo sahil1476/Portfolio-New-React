@@ -5,7 +5,6 @@ import { Instagram, Facebook, Mail, Linkedin } from 'lucide-react';
 export function Hero() {
   const planetGifs = [
     'https://i.pinimg.com/originals/37/39/3f/37393f39848461fd160c105ea868dd2a.gif', 
-    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b5334f5-f457-43a7-9f1a-2978fdcc7df3/d803p83-48dada82-cd99-4f22-b159-c2119741dcc7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZiNTMzNGY1LWY0NTctNDNhNy05ZjFhLTI5NzhmZGNjN2RmM1wvZDgwM3A4My00OGRhZGE4Mi1jZDk5LTRmMjItYjE1OS1jMjExOTc0MWRjYzcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vy6D9_dNfaQXsNEhXZiZ9gGgdWq9R5mSr3wdANBm5T0', 
     'https://www.icegif.com/wp-content/uploads/2022/04/icegif-432.gif', 
   ];
   return (
