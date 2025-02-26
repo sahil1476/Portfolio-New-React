@@ -3,6 +3,11 @@ import astoImg from '/src/assets/asto.png';
 import { Instagram, Facebook, Mail, Linkedin } from 'lucide-react';
 
 export function Hero() {
+  const planetGifs = [
+    'https://i.pinimg.com/originals/37/39/3f/37393f39848461fd160c105ea868dd2a.gif', 
+    'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b5334f5-f457-43a7-9f1a-2978fdcc7df3/d803p83-48dada82-cd99-4f22-b159-c2119741dcc7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZiNTMzNGY1LWY0NTctNDNhNy05ZjFhLTI5NzhmZGNjN2RmM1wvZDgwM3A4My00OGRhZGE4Mi1jZDk5LTRmMjItYjE1OS1jMjExOTc0MWRjYzcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vy6D9_dNfaQXsNEhXZiZ9gGgdWq9R5mSr3wdANBm5T0', 
+    'https://www.icegif.com/wp-content/uploads/2022/04/icegif-432.gif', 
+  ];
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
@@ -10,22 +15,22 @@ export function Hero() {
         <div className="lightning" />
         
         {/* Animated Planets */}
-        {[...Array(3)].map((_, i) => (
-          <div
+        {planetGifs.map((gif, i) => (
+          <img
             key={i}
-            className="absolute rounded-full"
+            src={gif}
+            alt={`Planet ${i + 1}`}
+            className="absolute"
             style={{
-              top: `${20 + Math.random() * 60}%`,
-              left: `${20 + Math.random() * 60}%`,
-              width: `${100 + Math.random() * 150}px`,
-              height: `${100 + Math.random() * 150}px`,
-              background: `radial-gradient(circle at 30% 30%, 
-                hsl(${210 + Math.random() * 40}, 70%, 50%), 
-                hsl(${210 + Math.random() * 40}, 70%, 20%))`,
-              opacity: 0.2,
-              transform: 'translateZ(0)',
-              animation: `float ${10 + Math.random() * 10}s infinite`
+              top: `${20 + Math.random() * 60}%`, // Random position from top
+              left: `${20 + Math.random() * 60}%`, // Random position from left
+              width: `${100 + Math.random() * 200}px`, // Random width between 100px and 300px
+              height: 'auto', // Maintain aspect ratio of the GIF
+              opacity: 0.8, // Adjust opacity if needed
+              animation: `float ${10 + Math.random() * 15}s infinite`, // Floating effect
             }}
+          />
+        ))}
           />
         ))}
         
