@@ -21,8 +21,8 @@ export function Hero() {
             alt={`Planet ${i + 1}`}
             className="absolute"
             style={{
-              top: `${20 + Math.random() * 60}%`, // Random position from top
-              left: `${20 + Math.random() * 60}%`, // Random position from left
+              top: `${18 + Math.random() * 60}%`, // Random position from top
+              left: `${10 + Math.random() * 60}%`, // Random position from left
               width: `${100 + Math.random() * 200}px`, // Random width between 100px and 300px
               height: 'auto', // Maintain aspect ratio of the GIF
               opacity: 0.8, // Adjust opacity if needed
