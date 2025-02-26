@@ -14,15 +14,6 @@ export function Footer() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      <div
-        className="absolute bottom-0 right-0 w-48 h-48 opacity-90 mt-10"
-        style={{
-          backgroundImage: 'url(https://media2.giphy.com/media/5hvKNH3QAA4jPaMfcG/200w.gif?cid=6c09b952jcq34u1hp89wnk40ouexk1qizg7hxup5i66isi52&ep=v1_stickers_search&rid=200w.gif&ct=s)', // Replace with the actual GIF URL
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      />
 
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
