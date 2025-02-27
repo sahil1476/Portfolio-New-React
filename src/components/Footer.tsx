@@ -14,6 +14,7 @@ export function Footer() {
           backgroundRepeat: 'no-repeat',
         }}
       />
+      
 
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -65,8 +66,8 @@ export function Footer() {
 
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 flex items-center justify-center group">
-            Made with <Heart size={16} className="mx-1 text-red-500 group-hover:animate-pulse" /> by Sahil Sharma
+          <p className="text-gray-400 flex items-center justify-center group bg-gradient-to-r from-white via-blue-700 to-blue-500 bg-clip-text text-transparent tracking-wider">
+            Made with <Heart size={26} className="mx-1 text-red-500 animate-pulse" /> by Sahil Sharma
           </p>
           <p className="text-gray-500 text-sm mt-2">&copy; 2024 All rights reserved.</p>
         </div>
