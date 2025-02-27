@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { 
   Code2, Database, Globe, Server,
   Braces, FileJson, Terminal, Cpu,
@@ -56,21 +56,31 @@ export function AboutMe() {
   return (
     <section id="about" className="py-20 bg-[#0d1117] text-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-12 text-center glow-text">About Me</h2>
-        
+        {/* <h2 className="text-4xl font-bold mb-12 text-center glow-text">About Me</h2> */}
+        <div className=" flex items-center justify-center bg-[#0d1117]">
+      <h2 className="image-text text-6xl text-center md:text-9xl font-bold mb-6" style={{
+        backgroundImage: 'url(https://upload-os-bbs.hoyolab.com/upload/2022/06/04/163932367/569b87e2b0c3c11960fe3abf47b83179_5495270848398525506.gif)',
+        backgroundSize: 'cover',
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        color: 'transparent'
+      }}>
+        About Me
+      </h2>
+      </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
-            <p className="text-lg text-gray-300 leading-relaxed">
+          <div className="space-y-6 ">
+            <p className="text-lg text-gray-300 leading-relaxed bg-gradient-to-r from-pink-500 via-yellow-500 to-red-500 bg-clip-text text-transparent tracking-wider">
               Hello! I'm Sahil Sharma, a passionate web developer with bachelor of technology in Computer Science Engineering. 
               I specialize in building exceptional digital experiences that combine beautiful design with efficient functionality.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed bg-gradient-to-r from-blue-600 via-yellow-200 to-red-500 bg-clip-text text-transparent tracking-wider">
               My journey in web development started during my Second year of college, and since then, 
               I've been constantly learning and exploring new technologies to create innovative solutions.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed bg-gradient-to-r from-blue-700 via-violet-500 to-red-400 bg-clip-text text-transparent tracking-wider">
               Currently, I am working in Data Analysis And with a strong foundation in web development technologies and practical experience from 
-              my tenure at "Xenonstack", I am eager to bring my skills and enthusiasm to your team. .
+              my tenure at "Xenonstack", I am eager to bring my skills and enthusiasm to your team.
             </p>
           </div>
 
@@ -109,7 +119,7 @@ export function AboutMe() {
             opacity: 0.91 // Adjust opacity to not overpower the text
           }}
         >
-          <div className="text-[#58a6ff] mb-4 flex items-center gap-2">
+          <div className="text-[#f3f3f3] mb-4 flex items-center gap-2">
             {category.icon}
             <h3 className="text-xl font-semibold">{category.name}</h3>
           </div>
