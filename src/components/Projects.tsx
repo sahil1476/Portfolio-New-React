@@ -158,11 +158,11 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href={project.github} className="flex items-center text-gray-400 hover:text-[#58a6ff] transition-colors">
+                  <a href={project.github} target='blank' className="flex items-center text-gray-400 hover:text-[#58a6ff] transition-colors">
                     <Github size={20} className="mr-1" />
                     Code
                   </a>
-                  <a href={project.demo} className="flex items-center text-gray-400 hover:text-[#58a6ff] transition-colors">
+                  <a href={project.demo} target='blank' className="flex items-center text-gray-400 hover:text-[#58a6ff] transition-colors">
                     <ExternalLink size={20} className="mr-1" />
                     Demo
                   </a>
