@@ -7,6 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
+    title: ' Wallpaper Hub',
+    description: 'A platform where you can explore, download, and enjoy stunning high-resolution wallpapers for your devices.',
+    image: 'https://wallpapercat.com/w/full/c/4/0/171494-3200x1680-desktop-hd-up-cartoon-background.jpg',
+    technologies: ['React', 'tailwind', 'react-route'],
+    github: 'https://wallpaperhub-sahil.netlify.app/',
+    demo: 'https://wallpaperhub-sahil.netlify.app/'
+  },
+  {
     title: ' Help Center App',
     description: 'A full-stack web application similar to Stack Overflow, designed to help users find answers to queries, share solutions, and contribute knowledge.',
     image: 'https://plus.unsplash.com/premium_vector-1720931652728-72862ec52914?q=80&w=696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
