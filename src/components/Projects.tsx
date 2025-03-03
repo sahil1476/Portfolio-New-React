@@ -15,6 +15,30 @@ const projects = [
     demo: 'https://wallpaperhub-sahil.netlify.app/'
   },
   {
+    title: ' Password Manager',
+    description: 'A secure, animated, and responsive password manager built with React, Local Storage, and Framer Motion for smooth animations. Manage and store your passwords locally without compromising security!',
+    image: 'https://www.propertyware.com/wp-content/uploads/2014/01/password-security.jpg',
+    technologies: ['React', 'LocalStorage','Framer Motion','Tailwind CSS '],
+    github: 'https://github.com/sahil1476/Password-Generator',
+    demo: 'https://password-generator-wheat-phi.vercel.app/'
+  },
+  {
+    title: ' Animated Gaming Web',
+    description: 'A gaming-themed web project built using React and GSAP (GreenSock Animation Platform).',
+    image: 'https://imageio.forbes.com/specials-images/imageserve/6531307511096cbdafbfb009/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds',
+    technologies: ['React', 'GSAP - GreenSock Animation Platform '],
+    github: 'https://github.com/sahil1476/GSAP-animation-React',
+    demo: 'https://animated-gsap-react.netlify.app/'
+  },
+  {
+    title: ' Nike Clone App',
+    description: 'A modern, fully responsive e-commerce Nike Clone built with React & Tailwind CSS. This project replicates the Nike store experience with an intuitive UI, animations, and dynamic product listings.',
+    image: 'https://wallpaper.dog/large/17291932.jpg',
+    technologies: ['React','Tailwind CSS '],
+    github: 'https://github.com/sahil1476/NikeClone',
+    demo: 'https://nike-clone-six-rho.vercel.app/'
+  },
+  {
     title: ' Help Center App',
     description: 'A full-stack web application similar to Stack Overflow, designed to help users find answers to queries, share solutions, and contribute knowledge.',
     image: 'https://plus.unsplash.com/premium_vector-1720931652728-72862ec52914?q=80&w=696&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
